@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Work — Sankalp Foundation</title>
+  <meta name="description" content="Photo albums from Sankalp Foundation's charity work in Silchar, Assam — blanket donation drives, COVID-19 relief and more." />
+  <meta name="theme-color" content="#F7F6F3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Work — Sankalp Foundation" />
+  <meta property="og:description" content="Moments from the field — blanket drives, COVID-19 relief and more across the Barak Valley." />
+  <meta property="og:image" content="asset/logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="asset/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="asset/logo.jpg" alt="Sankalp Foundation logo" />
+      <span>Sankalp Foundation</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html" class="active">Our Work</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="donate.html">Donate</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="nav-menu" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Our Work</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="donate.html">Donate</a>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="wrap stack">
+        <p class="eyebrow rise">Our Work</p>
+        <h1 class="display rise d1">Moments from<br />the field.</h1>
+        <p class="lede rise d2" style="max-width:58ch;">
+          Every photo is a real day, a real place, a real promise kept. These are the
+          people and moments behind Sankalp Foundation. Tap any image to view it full screen.
+        </p>
+      </div>
+    </section>
+
+    <!-- ALBUMS (rendered from the EVENTS list in the script below) -->
+    <section class="section" style="padding-top:clamp(16px,4vw,40px);">
+      <div class="wrap">
+        <div class="albums" id="albums"><!-- albums injected here --></div>
+
+        <!-- growth note -->
+        <p class="center reveal" style="margin-top:clamp(40px,6vw,72px);color:var(--grey-2);">
+          More drives, more moments — added here as our work grows. 🌱
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding-top:clamp(24px,4vw,40px);">
+      <div class="wrap reveal">
+        <div class="center" style="background:var(--tint-peach);border-radius:var(--r-lg);padding:clamp(40px,8vw,80px) clamp(24px,5vw,48px);">
+          <h2 class="h2" style="max-width:20ch;margin-inline:auto;">Help us write the next chapter.</h2>
+          <p class="lede" style="max-width:46ch;margin:1rem auto 1.75rem;">Your donation funds the next drive, the next family, the next promise kept.</p>
+          <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
+            <a class="btn btn-warm" href="donate.html">Donate now</a>
+            <a class="btn btn-ghost" href="contact.html">Get involved</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-brand"><img src="asset/logo.jpg" alt="" /><span>Sankalp Foundation</span></div>
+      <div class="stack" style="font-size:.9rem;">
+        <div>Itkhola, Silchar, Assam, India</div>
+        <small>A promise for a better tomorrow · Est. 2026</small>
+      </div>
+      <small>© 2026 Sankalp Foundation</small>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       ✏️  HOW TO ADD A NEW EVENT ALBUM
+       1. Drop the event's photos into a new folder, e.g. asset/charity_flood_relief/
+       2. Copy one { ... } block below and paste it at the TOP of the EVENTS list
+          (newest first). Fill in the title, description, date and photo paths.
+       3. Save. That's it — the album renders automatically, lightbox included.
+       Tints cycle automatically; or set your own with `tint: "var(--tint-peach)"`.
+       ============================================================ -->
+  <script>
+    const EVENTS = [
+      {
+        tag: "Winter Drive",
+        title: "Blanket Donation Drive",
+        desc: "As temperatures dropped across the Barak Valley, our volunteers reached the families who needed warmth most — distributing blankets door to door, and sitting a while with every elder they wrapped.",
+        location: "Silchar, Assam",
+        date: "Winter 2026",
+        photos: [
+          { src: "asset/charity_blanket_donation/640f1d5d-ef6e-43f2-af20-ed2617283489.jfif", alt: "A volunteer wrapping a warm blanket around an elderly man", cap: "Warmth, delivered by hand" },
+          { src: "asset/charity_blanket_donation/3ebe6fa9-0514-476a-80fc-6d8c5e046852.jfif", alt: "A family receiving warm blankets from volunteers" },
+          { src: "asset/charity_blanket_donation/c82fc559-4a91-4efe-b9ee-89265a5a9967.jfif", alt: "Volunteers preparing blankets for distribution" }
+        ]
+      },
+      {
+        tag: "Crisis Relief",
+        title: "COVID-19 Relief",
+        desc: "When the pandemic left families without work or essentials, Sankalp stepped in — delivering food, supplies and reassurance to the households hit hardest in our community.",
+        location: "Silchar, Assam",
+        date: "Relief effort",
+        photos: [
+          { src: "asset/charity_covid_relief/d09cad6d-b833-4584-9584-1f704d403620.jfif", alt: "Sankalp volunteers distributing COVID-19 relief supplies", cap: "Relief, when it mattered most" }
+        ]
+      }
+      /* ⬇️  Add new events ABOVE this line (newest first). Template:
+      ,{
+        tag: "Flood Relief",
+        title: "Barak Valley Flood Relief",
+        desc: "Short description of what we did and who it helped.",
+        location: "Silchar, Assam",
+        date: "2026",
+        photos: [
+          { src: "asset/charity_flood_relief/photo1.jpg", alt: "Describe the photo", cap: "Optional cover caption" },
+          { src: "asset/charity_flood_relief/photo2.jpg", alt: "Describe the photo" }
+        ]
+      }
+      */
+    ];
+
+    (function renderAlbums() {
+      const TINTS = ["var(--tint-sky)", "var(--tint-mint)", "var(--tint-peach)", "var(--tint-lav)", "var(--tint-blush)"];
+      const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      const root = document.getElementById("albums");
+      EVENTS.forEach((ev, i) => {
+        const single = ev.photos.length === 1;
+        const art = document.createElement("article");
+        art.className = "album reveal " + (single ? "album--single" : "album--gallery");
+        art.style.setProperty("--album-tint", ev.tint || TINTS[i % TINTS.length]);
+        const figs = ev.photos.map((p, j) =>
+          '<figure class="album-figure ' + (j === 0 ? "is-cover" : "") + '" data-lightbox data-full="' + esc(p.src) + '">' +
+            '<img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '" loading="lazy" />' +
+            (p.cap && j === 0 ? '<figcaption class="cap">' + esc(p.cap) + "</figcaption>" : "") +
+          "</figure>"
+        ).join("");
+        const count = ev.photos.length + " photo" + (ev.photos.length > 1 ? "s" : "");
+        art.innerHTML =
+          '<header class="album-head">' +
+            '<span class="album-tag">' + esc(ev.tag) + "</span>" +
+            '<h2 class="album-title">' + esc(ev.title) + "</h2>" +
+            '<p class="album-desc">' + esc(ev.desc) + "</p>" +
+            '<div class="album-meta"><span>' + esc(ev.location) + '</span><span class="dot"></span><span>' + esc(ev.date) + '</span><span class="dot"></span><span>' + count + "</span></div>" +
+          "</header>" +
+          '<div class="album-gallery">' + figs + "</div>";
+        root.appendChild(art);
+      });
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
