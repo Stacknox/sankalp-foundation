@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace YOUR_DOMAIN with your live domain once deployed
-Sitemap: https://YOUR_DOMAIN/sitemap.xml
+Sitemap: https://sankalpsilchar.in/sitemap.xml
